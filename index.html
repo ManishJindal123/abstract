@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANISH JINDAL</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./magnific/magnific-popup.css">
+</head>
+<body>
+   
+<!--------------------------------..........Header........------------------------------->
+    <header class="header">
+        <div class="hero">
+            <h1 class="title">MANISH JINDAL</h1>
+            <h2 class="title">A front-end developer and coder.</h2>
+            <a href="#" class="hero-button pulsate">Hire me!</a>
+            
+        </div>
+  
+    </header>
+   <!----------------..............End of Header Section...........--------------------->
+   <!----------------------------About me Section------------------->
+   <section class="aboutme" id="aboutme">
+       <article class="aboutme-image"></article>
+       <article class="aboutme-text">
+           <div class="aboutme-text-center">
+               <h1>About Me</h1>
+               <p>Hii There !! I am Manish Jindal, A cse under-graduate.</p>
+               <p>A well organised, creative and goal-oriented graduate possessing excellent communication, with a flair to explore suitable avenues in CSE while developing projects with efficiency and quality.</p>
+                <a href="#">Explore</a>
+           </div>
+       </article>
+   </section>
+    <!-------------------------------------End of about me Section------------------------------>
+    
+    <!--------------------------------------SKILLS--------------------------------->
+<div class="skills">
+      <div class="skill">
+        <h1 style="color: dodgerblue; text-align: center;">MY SKILLS</h1>
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="90"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Adobe xd</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="80"></div>
+        </div>
+      </div>
+    
+    <div class="skill">
+        <div class="skill-name">C-Language</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="80"></div>
+        </div>
+      </div>
+    
+    <div class="skill">
+        <div class="skill-name">NETWORKING</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="90"></div>
+        </div>
+      </div>
+    
+    <div class="skill">
+        <div class="skill-name">PYTHON</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="80"></div>
+        </div>
+      </div>
+    
+     <div class="skill">
+        <div class="skill-name">JAVA</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70"></div>
+        </div>
+      </div>
+    
+    <div class="skill">
+        <div class="skill-name">C++</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="90"></div>
+        </div>
+      </div>
+    
+    <div class="skill">
+        <div class="skill-name">JSON/AJAX</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70"></div>
+        </div>
+      </div>
+    
+    <div class="skill">
+        <div class="skill-name">COMMAND LINE</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="80"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script>
+      $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+          duration: 1000,
+          step: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      });
+    </script>
+    <!-------------------------------END OF SKILLS------------------------------->
+   
+   <!--------------------------..........Social Icons.......--------------------------->
+   <section id="social-icons">
+       <a href="https://www.linkedin.com/in/manish-jindal-4347241b9/"><i class="fa fa-linkedin linkedin"></i></a>
+       <a href="https://github.com/manishjindal123"><i class="fa fa-github github"></i></a>
+       <a href="https://www.instagram.com/_manish.jindal_"><i class="fab fa-instagram instagram"></i></a>
+       <a href="https://www.facebook.com/jindal.manish.7"><i class="fab fa-facebook"></i></a>
+   </section>
+ <!---------------------------............End of Social Icons.........---------------------------->
+   
+<!----------------------------............Contact Us...............--------------------------->
+<section id="contact-section">
+           <div class="container">
+           	 <h2 style="font-family: cursive">Contact Me</h2>
+              <p style="font-family: cursive">Email me and ask me something about programming stuff.</p>
+             <div class="contact-form">
+
+                  <!-- First grid -->
+               <div>
+                 <i class="fa fa-map-marker"></i><span class="form-info">Bathinda,Punjab</span><br>
+                 <i class="fa fa-phone" > </i><span class="form-info">904198xxxx</span><br>
+                 <i class="fa fa-envelope"></i><span class="form-info">jindalmanish5916@gmail.com</span>
+               </div>
+               
+                   <!------------------------second grid---------------------------->
+           <div>        
+             <form>
+               <input type="text" placeholder="Your Name" required>
+               <input type="text" placeholder="Last Name"><br>
+               <input type="Email" placeholder="Email" required><br>
+               <input type="text" placeholder="Subject of this message"><br>
+               <textarea name="message" placeholder="Message" rows="5" required></textarea><br>
+               <button class="submit" >Send Message</button> 
+             </form>   
+               </div>
+             </div>
+           </div>
+    </section>
+  
+<script src="onClickMenu.js"></script>
+<!--Magnific POPup Jquery also-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="magnific/jquery.magnific-popup.min.js"></script>
+<script src="magnific/magnific.js"></script>
+</body>
+</html>
